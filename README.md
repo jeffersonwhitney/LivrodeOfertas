@@ -14,6 +14,9 @@ Este projeto em C# simula um simples livro de ofertas, permitindo aos usuários:
 3. **Execute o programa:** Execute o arquivo executável gerado.
 4. **Interaja com o menu:** Siga as instruções no console para realizar as operações desejadas.
 
+### Preview do Código em Excecução
+![image](https://github.com/user-attachments/assets/89265599-850a-499e-a1ed-e6d0760e4015)
+
 ## Funcionalidades
 * **Cadastro de ofertas:** Permite adicionar novas ofertas ao sistema.
 * **Remoção de ofertas:** Permite excluir ofertas existentes, identificando-as pela posição.
