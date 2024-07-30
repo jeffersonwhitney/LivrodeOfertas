@@ -9,9 +9,10 @@ Este projeto em C# simula um simples livro de ofertas, permitindo aos usuários:
 * **Visualizar por posição:** Ordenar e exibir as ofertas por posição.
 
 ## Como usar
-1. **Compile o código:** Utilize seu ambiente de desenvolvimento C# para compilar o projeto.
-2. **Execute o programa:** Execute o arquivo executável gerado.
-3. **Interaja com o menu:** Siga as instruções no console para realizar as operações desejadas.
+1. **Baixe o arquivo .rar:** Instale o setup e abra o executavel ou siga para as intruções abaixo.
+2. **Compile o código:** Utilize seu ambiente de desenvolvimento C# para compilar o projeto.
+3. **Execute o programa:** Execute o arquivo executável gerado.
+4. **Interaja com o menu:** Siga as instruções no console para realizar as operações desejadas.
 
 ## Funcionalidades
 * **Cadastro de ofertas:** Permite adicionar novas ofertas ao sistema.
