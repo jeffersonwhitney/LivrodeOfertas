@@ -24,7 +24,7 @@ namespace LivrodeOfertas
             bool loop = true;
             do
             {
-                Console.WriteLine("\nEscolha uma opção abaixo:\n 1-Cadastrar oferta\n 2-Mostrar historico de ofertas cadastradas\n 3-Mostrar livro de ofertas por posição\n 0-Sair");
+                Console.WriteLine("\nEscolha uma opção abaixo:\n 1-Cadastrar oferta\n 2-Remover oferta\n 3-Mostrar historico de ofertas cadastradas\n 4-Mostrar livro de ofertas por posição\n 0-Sair");
                 int i = int.Parse(Console.ReadLine());
                 switch (i)
                 {
@@ -39,13 +39,19 @@ namespace LivrodeOfertas
                         ofertas.Add(oferta);
                         break;
                     case 2:
+                        Console.WriteLine("Digite a posição da oferta a ser DELETADA:");
+                        int posicaoParaRemover = Convert.ToInt32(Console.ReadLine());
+                        Oferta ofertaParaRemover = ofertas.Find(p => p.posicao == posicaoParaRemover);
+                        ofertas.Remove(ofertaParaRemover);
+                        break;
+                    case 3:
                         Console.WriteLine("\n Ofertas cadastradas:");
                         foreach (var ofertaAtual in ofertas)
                         {
                             Console.WriteLine($"Posição: {ofertaAtual.posicao} | Valor: R${ofertaAtual.valor} | Quantidade: {ofertaAtual.quantidade}");
                         }
                         break;
-                    case 3:
+                    case 4:
                         Console.WriteLine("\n Ofertas cadastradas por posição:");
                         var ofertasPorPosicao = ofertas.OrderBy(p => p.posicao);
                         foreach (var ofertaPorPosicao in ofertasPorPosicao)
